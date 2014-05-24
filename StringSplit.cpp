@@ -25,7 +25,7 @@ void print( vector<string> & v )
 int main(int argc, char* argv[])
 {
   string s = "a,b,,, c ,,d,f,";
-  vector <string> tokens;
+  vector<string> tokens;
 
   cout << "Original String = \"" << s << "\"\n\n";
 
@@ -42,6 +42,24 @@ int main(int argc, char* argv[])
   cout << "Split on \" ,\" and delimiters" << endl; 
   split( tokens, s, is_any_of( " ," ), token_compress_on );
   print( tokens );
+  cout << "-----------------------" << endl;
+
+
+
+  //Using boost
+  vector<string> strs;
+  boost::split(strs, s, boost::is_any_of(","));
+
+  // method 1
+  for (size_t i = 0; i < strs.size(); i++)
+    cout << strs[i];
+  cout << endl;
+
+  // method 2
+  for (vector<string>::iterator it = strs.begin(); it != strs.end(); ++it)
+    cout << *it; 
+  cout << endl;
+
 
   return 0;
 }
