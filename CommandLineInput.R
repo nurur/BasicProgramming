@@ -1,6 +1,6 @@
 # Command Line Input in R
- 
-# To run the script, type in the shell: 
+
+ # To run the script, type in the shell: 
 # Rscript CommandLineInput.R 2 3.1415
 
 

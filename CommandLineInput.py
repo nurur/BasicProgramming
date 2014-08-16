@@ -6,7 +6,6 @@
 # Note that arg1 and arg2 are two dummy variables
 
 
-
 # import sys module 
 import sys
 
