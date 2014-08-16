@@ -1,7 +1,8 @@
 # Command Line Input in Python 
 
-# To run the code, type in the shell: 
+# To run the script, type in the shell: 
 # python CommandLineInput.py arg1 arg2 333 333.0
+#
 # Note that arg1 and arg2 are two dummy variables
 
 
@@ -9,10 +10,10 @@
 # import sys module 
 import sys
 
-# Get the total number of args passed to the demo.py
+# Get the total number of args passed to the CommandLineInput.py
 totargs  = len(sys.argv)
  
-# Get the arguments list 
+# Get the argument list 
 listargs = str(sys.argv)
 
 
